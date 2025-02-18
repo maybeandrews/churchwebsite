@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+To get started with working and collaborating : --------------
+first clone the repository into your desktop and then cd into the folder..
+then just type 'npm install' that should install all the dependencies.. and then you are good to go that's all
+
+for changes make a branch from main using 'git checkout -b <branchname>
+and then push the branch to origin, after that use a pull request to merge into main.
+
 ## Getting Started
 
 First, run the development server:
@@ -24,8 +31,8 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+-   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
