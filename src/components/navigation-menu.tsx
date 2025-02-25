@@ -76,11 +76,11 @@ export function NavigationMenu({ mobile = false }: { mobile?: boolean }) {
       <NavigationMenuList className="bg-transparent">
         {navigation.map((item) => (
           <NavigationMenuItem key={item.title}>
-            <NavigationMenuTrigger className="bg-transparent text-white ">
+            <NavigationMenuTrigger className="bg-transparent text-white data-[state=open]:bg-transparent focus:bg-transparent hover:bg-transparent hover:text-white">
               {item.title}
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 bg-black/80 backdrop-blur-md border border-white/20 rounded-md">
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 bg-black/50 backdrop-blur-md border border-white/20 rounded-md">
                 {item.items.map((subItem) => (
                   <li key={subItem.href}>
                     <NavigationMenuLink asChild>

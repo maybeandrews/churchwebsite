@@ -56,10 +56,10 @@ export function SiteHeader() {
 
         {/* Right Section: Buttons */}
         <div className="hidden sm:flex items-center space-x-4">
-          <Button variant="outline" className="border-black text-black hover:bg-black hover:text-white border-white">
+          <Button variant="outline" className="bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white">
             Donate Now
           </Button>
-          <Button variant="outline" className="border-white bg-black text-white hover:bg-white">
+          <Button variant="outline" className="bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white">
             Contact Us
           </Button>
         </div>
