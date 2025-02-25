@@ -59,7 +59,7 @@ export function NavigationMenu({ mobile = false }: { mobile?: boolean }) {
                 <Link
                   key={subItem.href}
                   href={subItem.href}
-                  className="block text-sm text-white/80 hover:text-white"
+                  className="block text-sm text-white"
                 >
                   {subItem.title}
                 </Link>
@@ -76,7 +76,7 @@ export function NavigationMenu({ mobile = false }: { mobile?: boolean }) {
       <NavigationMenuList className="bg-transparent">
         {navigation.map((item) => (
           <NavigationMenuItem key={item.title}>
-            <NavigationMenuTrigger className="bg-transparent text-white hover:bg-white/10 data-[state=open]:bg-white/10 focus:bg-white/10">
+            <NavigationMenuTrigger className="bg-transparent text-white ">
               {item.title}
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -86,7 +86,7 @@ export function NavigationMenu({ mobile = false }: { mobile?: boolean }) {
                     <NavigationMenuLink asChild>
                       <Link
                         href={subItem.href}
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 focus:bg-white/10 text-white"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors focus:bg-blue-200/50 text-white" 
                       >
                         <div className="text-sm font-medium leading-none">
                           {subItem.title}
