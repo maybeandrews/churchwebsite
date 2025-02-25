@@ -17,13 +17,13 @@ export function HeroSection() {
       subtitle: "Forane Church, Edappally"
     },
     {
-      image: "/images/church-interior.jpg",
+      image: "/images/homeimage.jpg",
       quote: "I am the light of the world",
       title: "Join Our Community",
       subtitle: "Sunday Service at 9:00 AM"
     },
     {
-      image: "/images/church-event.jpg",
+      image: "/images/homepage.jpg",
       quote: "Faith, Hope and Love",
       title: "Serving Since 1932",
       subtitle: "A Century of Faith and Devotion"
