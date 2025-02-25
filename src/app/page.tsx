@@ -1,7 +1,10 @@
 import { HeroSection } from "@/components/hero-section";
 import { Church, Video, Gift } from "lucide-react";
+import ChurchSection from "@/components/ChurchSection";
 import Link from "next/link";
 import Image from "next/image";
+import NewsCalendarSection from "@/components/NewsCalendarSection";
+import GallerySection from "@/components/GallerySection";
 
 export default function Home() {
     return (
@@ -122,7 +125,6 @@ export default function Home() {
                         The feast of St. George in Edappally Church
                     </p>
                 </div>
-
                 <div className="relative h-[300px] bg-black">
                     <Image
                         src="/images/homeimage2.png"
@@ -139,7 +141,6 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-
                 <div className="bg-gray-200 p-8 flex items-center justify-center">
                     <Image
                         src="/placeholder.svg"
@@ -149,6 +150,15 @@ export default function Home() {
                         className="max-w-[200px]"
                     />
                 </div>
+            </section>
+            <section>
+                <ChurchSection />
+            </section>
+            <section>
+                <NewsCalendarSection />
+            </section>
+            <section>
+                <GallerySection />
             </section>
         </main>
     );
