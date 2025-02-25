@@ -4,7 +4,7 @@ To get started with working and collaborating : --------------
 first clone the repository into your desktop and then cd into the folder..
 then just type 'npm install' that should install all the dependencies.. and then you are good to go that's all
 
-for changes make a branch from main using 'git checkout -b <branchname>
+for changes make a branch from main using 'git checkout -b <branchname>'
 and then push the branch to origin, after that use a pull request to merge into main.
 
 ## Getting Started
