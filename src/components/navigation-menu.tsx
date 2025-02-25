@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 import {
   NavigationMenu as Nav,
   NavigationMenuContent,
@@ -6,7 +6,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+} from "@/components/ui/navigation-menu";
 
 const navigation = [
   {
@@ -45,21 +45,21 @@ const navigation = [
       { title: "Watch Live", href: "/live" },
     ],
   },
-]
+];
 
 export function NavigationMenu({ mobile = false }: { mobile?: boolean }) {
   if (mobile) {
     return (
-      <div className="flex flex-col space-y-4 mt-4">
+      <div className="flex flex-col space-y-4 mt-4 text-white">
         {navigation.map((item) => (
           <div key={item.title} className="space-y-2">
-            <h4 className="font-medium text-sm">{item.title}</h4>
+            <h4 className="font-medium text-sm text-white">{item.title}</h4>
             <div className="ml-4 space-y-1">
               {item.items.map((subItem) => (
                 <Link
                   key={subItem.href}
                   href={subItem.href}
-                  className="block text-sm text-muted-foreground hover:text-primary"
+                  className="block text-sm text-white/80 hover:text-white"
                 >
                   {subItem.title}
                 </Link>
@@ -68,25 +68,29 @@ export function NavigationMenu({ mobile = false }: { mobile?: boolean }) {
           </div>
         ))}
       </div>
-    )
+    );
   }
 
   return (
-    <Nav>
-      <NavigationMenuList>
+    <Nav className="bg-transparent">
+      <NavigationMenuList className="bg-transparent">
         {navigation.map((item) => (
           <NavigationMenuItem key={item.title}>
-            <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-transparent text-white hover:bg-white/10 data-[state=open]:bg-white/10 focus:bg-white/10">
+              {item.title}
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 bg-black/80 backdrop-blur-md border border-white/20 rounded-md">
                 {item.items.map((subItem) => (
                   <li key={subItem.href}>
                     <NavigationMenuLink asChild>
                       <Link
                         href={subItem.href}
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 focus:bg-white/10 text-white"
                       >
-                        <div className="text-sm font-medium leading-none">{subItem.title}</div>
+                        <div className="text-sm font-medium leading-none">
+                          {subItem.title}
+                        </div>
                       </Link>
                     </NavigationMenuLink>
                   </li>
@@ -97,6 +101,5 @@ export function NavigationMenu({ mobile = false }: { mobile?: boolean }) {
         ))}
       </NavigationMenuList>
     </Nav>
-  )
+  );
 }
-
