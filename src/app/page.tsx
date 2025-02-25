@@ -4,6 +4,7 @@ import ChurchSection from "@/components/ChurchSection";
 import Link from "next/link";
 import Image from "next/image";
 import NewsCalendarSection from "@/components/NewsCalendarSection";
+import GallerySection from "@/components/GallerySection";
 
 export default function Home() {
     return (
@@ -155,6 +156,9 @@ export default function Home() {
             </section>
             <section>
                 <NewsCalendarSection />
+            </section>
+            <section>
+                <GallerySection />
             </section>
         </main>
     );
