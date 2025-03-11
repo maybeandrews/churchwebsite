@@ -1,52 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 const NewsCalendarSection = () => {
-    const [currentMonth, setCurrentMonth] = useState("FEBRUARY 2025");
-
-    // Calendar data
-    const weekDays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-    const daysInMonth = [
-        { day: 1, type: "weeklyOff" },
-        { day: 2, type: "restrictedHoliday" },
-        { day: 3, type: null },
-        { day: 4, type: null },
-        { day: 5, type: null },
-        { day: 6, type: null },
-        { day: 7, type: null },
-        { day: 8, type: "weeklyOff" },
-        { day: 9, type: "weeklyOff" },
-        { day: 10, type: null },
-        { day: 11, type: null },
-        { day: 12, type: "restrictedHoliday" },
-        { day: 13, type: null },
-        { day: 14, type: null },
-        { day: 15, type: "weeklyOff" },
-        { day: 16, type: "weeklyOff" },
-        { day: 17, type: null },
-        { day: 18, type: null },
-        { day: 19, type: "restrictedHoliday" },
-        { day: 20, type: null },
-        { day: 21, type: null },
-        { day: 22, type: "weeklyOff" },
-        { day: 23, type: "restrictedHoliday" },
-        { day: 24, type: null },
-        { day: 25, type: null },
-        { day: 26, type: "gazettedHoliday" },
-        { day: 27, type: null },
-        { day: 28, type: null },
-    ];
-
-    // Helper function to get cell class based on day type
-    const getCellClass = (type: string | null) => {
-        if (type === "gazettedHoliday") return "bg-red-500 text-white";
-        if (type === "restrictedHoliday") return "bg-green-500 text-white";
-        if (type === "weeklyOff") return "text-blue-500";
-        return "";
-    };
-
     return (
         <div className="w-full max-w-7xl mx-auto p-6 border border-gray-200 rounded-lg bg-white shadow-sm my-8">
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
@@ -95,69 +51,20 @@ const NewsCalendarSection = () => {
                     </div>
                 </div>
 
-                {/* Calendar Section */}
+                {/* Google Calendar Embed Section */}
                 <div className="w-full lg:w-1/2 bg-gray-100 rounded-lg p-4">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
                         Calendar
                     </h2>
-
                     <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-                        {/* Calendar Header with Navigation */}
-                        <div className="flex items-center justify-between bg-gray-100 p-4">
-                            <button className="text-gray-600 hover:text-gray-800 p-2">
-                                <span className="text-2xl">&lt;</span>
-                            </button>
-                            <h3 className="text-xl md:text-2xl font-bold text-gray-900">
-                                {currentMonth}
-                            </h3>
-                            <button className="text-gray-600 hover:text-gray-800 p-2">
-                                <span className="text-2xl">&gt;</span>
-                            </button>
-                        </div>
-
-                        {/* Calendar Days of Week */}
-                        <div className="grid grid-cols-7 text-center border-b">
-                            {weekDays.map((day, index) => (
-                                <div
-                                    key={index}
-                                    className="p-2 font-bold text-gray-800"
-                                >
-                                    {day}
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Calendar Days */}
-                        <div className="grid grid-cols-7 text-center">
-                            {daysInMonth.map((dayObj, index) => (
-                                <div
-                                    key={index}
-                                    className={`p-4 border ${getCellClass(
-                                        dayObj.type
-                                    )}`}
-                                >
-                                    {dayObj.day}
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Legend */}
-                        <div className="flex flex-wrap justify-around p-4 text-sm border-t">
-                            <div className="flex items-center mb-2">
-                                <div className="w-4 h-4 bg-red-500 mr-2"></div>
-                                <span>Gazetted Holiday</span>
-                            </div>
-                            <div className="flex items-center mb-2">
-                                <div className="w-4 h-4 bg-green-500 mr-2"></div>
-                                <span>Restricted Holiday</span>
-                            </div>
-                            <div className="flex items-center mb-2">
-                                <div className="w-4 h-4 border border-blue-500 mr-2"></div>
-                                <span className="text-blue-500">
-                                    Weekly Off
-                                </span>
-                            </div>
-                        </div>
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKolkata&showPrint=0&src=a3Jpc2huYWFzd2luNDkwQGdtYWlsLmNvbQ&src=Y2NmNWIzMDljYzFmYTJjMDVjYzY0ZGYzMTk0NDgxNTE0Yzg0MzkzOWNiNzIwMDg4NTQ1ODdjMmYzMzA5ZDU4ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTE1MDAyOTM0Njk5NzcxMjAyMzA4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IuaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21mZTcxMGNiZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTAzMDA4NDk1MDk0MDQ1NzA0ODg2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA3MzcxMTUyOTU4MDYwNzMyMzM2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAxMTM4NzMyNzUyOTYzOTc4NDE4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23AD1457&color=%230047a8&color=%230B8043&color=%230B8043&color=%23c26401&color=%23007b83&color=%23202124&color=%230047a8"
+                            style={{ border: "solid 1px #777" }}
+                            width="100%"
+                            height="600"
+                            frameBorder="0"
+                            scrolling="no"
+                        ></iframe>
                     </div>
                 </div>
             </div>
