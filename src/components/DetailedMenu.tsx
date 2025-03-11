@@ -1,6 +1,6 @@
 import React from "react";
 import { X } from "lucide-react";
-import { SheetContent } from "./ui/sheet";
+import { SheetContent, SheetTitle } from "./ui/sheet";
 
 interface DetailedMenuProps {
     isOpen: boolean;
@@ -10,6 +10,7 @@ interface DetailedMenuProps {
 const DetailedMenu = ({ isOpen, onClose }: DetailedMenuProps) => {
     return (
         <SheetContent side="left" className="w-full sm:w-[540px] p-0">
+            <SheetTitle>Menu</SheetTitle>
             <div
                 className={`fixed inset-0 bg-white z-50 overflow-y-auto p-6 ${
                     isOpen ? "block" : "hidden"
