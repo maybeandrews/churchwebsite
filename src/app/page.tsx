@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NewsCalendarSection from "@/components/NewsCalendarSection";
 import GallerySection from "@/components/GallerySection";
+import { DetailedMenu } from "@/components/DetailedMenu";
 
 export default function Home() {
     return (
