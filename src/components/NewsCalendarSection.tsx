@@ -53,10 +53,12 @@ const NewsCalendarSection = () => {
                 {/* Latest News Section */}
                 <div className="w-full lg:w-1/2">
                     <div className="mb-6">
-                        <div className="h-1 w-16 bg-red-700 mb-4"></div>
-                        <h2 className="uppercase text-2xl font-bold tracking-wide">
-                            LATEST NEWS
-                        </h2>
+                        <div className="flex items-center mb-4">
+                            <div className="w-1.5 h-10 bg-red-600 mr-4"></div>
+                            <h2 className="uppercase text-2xl font-bold tracking-wide">
+                                LATEST NEWS
+                            </h2>
+                        </div>
                     </div>
 
                     <div className="relative h-64 w-full mb-6">

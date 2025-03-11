@@ -54,10 +54,12 @@ const GallerySection = () => {
     return (
         <div className="w-full max-w-7xl mx-auto p-6 my-8">
             <div className="mb-8">
-                <div className="h-1 w-16 bg-red-700 mb-4"></div>
-                <h2 className="uppercase text-2xl font-bold tracking-wide">
-                    FROM THE GALLERY
-                </h2>
+                <div className="flex items-center mb-4">
+                    <div className="w-1.5 h-10 bg-red-600 mr-4"></div>
+                    <h2 className="uppercase text-2xl font-bold tracking-wide">
+                        FROM THE GALLERY
+                    </h2>
+                </div>
             </div>
 
             {/* Image Grid */}

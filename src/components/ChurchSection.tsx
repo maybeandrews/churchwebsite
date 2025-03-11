@@ -6,8 +6,9 @@ const ChurchSection = () => {
         <div className="w-full max-w-7xl mx-auto p-6 border border-gray-200 rounded-lg bg-white shadow-sm my-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                 <div className="flex-1">
-                    <div className="mb-4">
-                        <div className="h-1 w-16 bg-red-700 mb-4"></div>
+                    {/* Replace horizontal line with vertical line */}
+                    <div className="flex items-center mb-4">
+                        <div className="w-1.5 h-10 bg-red-600 mr-4"></div>
                         <h2 className="uppercase text-xl font-bold tracking-wide">
                             EDAPPALLY CHURCH
                         </h2>
