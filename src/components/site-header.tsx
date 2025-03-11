@@ -1,17 +1,55 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetTrigger } from "@/components/ui/sheet";
 import { NavigationMenu } from "./navigation-menu";
+import { DetailedMenu } from "./DetailedMenu";
 
 export function SiteHeader() {
-  return (
-    <header className="absolute top-0 z-50 w-full bg-transparent">
+  const [scrollY, setScrollY] = useState(0);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+  const [visible, setVisible] = useState(true);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
       
-      {/* Top Section: Social Media Icons */}
-      <div className="w-full flex justify-end bg-transparent px-6 py-1">
-        <div className="flex space-x-3">
+      // Determine if we should show or hide the header
+      if (currentScrollY > prevScrollY) {
+        // Scrolling down - hide header
+        setVisible(false);
+      } else {
+        // Scrolling up - show header
+        setVisible(true);
+      }
+      
+      // Update scroll positions
+      setPrevScrollY(currentScrollY);
+      setScrollY(currentScrollY);
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollY]);
+  
+  // Determine header styling based on scroll position
+  const isScrolled = scrollY > 50;
+  
+  return (
+    <header 
+      className={`fixed w-full z-40 transition-all duration-300 ${
+        visible ? 'translate-y-0' : '-translate-y-full'
+      } ${
+        isScrolled ? 'bg-black bg-opacity-80 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      }`}
+    >
+      {/* Top Section: Social Media Icons - now aligned above Contact Us button */}
+      <div className="w-full flex justify-end px-6 py-1">
+        <div className="flex space-x-3 sm:pr-12">
           <Link href="https://facebook.com" target="_blank" aria-label="Facebook">
             <Facebook className="h-4 w-4 text-white hover:text-blue-500 transition-colors duration-200" />
           </Link>
@@ -29,55 +67,61 @@ export function SiteHeader() {
           </Link>
         </div>
       </div>
-
+      
       {/* Main Header Section */}
       <div className="container flex h-16 items-center justify-between">
-        
         {/* Left Section: Logo */}
         <div className="flex items-center space-x-4">
           <Link href="/" className="flex items-center space-x-2">
-            <Image 
-              src="/placeholder.svg" 
-              alt="Logo" 
-              width={40} 
-              height={40} 
-              className="h-10 w-10" 
+            <Image
+              src="/placeholder.svg"
+              alt="Logo"
+              width={40}
+              height={40}
+              className="h-10 w-10"
             />
             <div className="hidden font-serif text-xl font-bold text-white sm:inline-block">
               St. George Orthodox Church
             </div>
           </Link>
         </div>
-
+        
         {/* Navigation Menu (Centered) */}
         <div className="hidden lg:flex lg:flex-1 justify-end">
           <NavigationMenu />
         </div>
-
-        {/* Right Section: Buttons */}
-        <div className="hidden sm:flex items-center space-x-4">
-          <Button variant="outline" className="bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white">
+        
+        {/* Right Section: Buttons and Hamburger */}
+        <div className="flex items-center space-x-4">
+          <Button 
+            variant="outline" 
+            className="hidden sm:inline-flex bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+          >
             Donate Now
           </Button>
-          <Button variant="outline" className="bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white">
+          <Button 
+            variant="outline" 
+            className="hidden sm:inline-flex bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+          >
             Contact Us
           </Button>
+          
+          {/* Updated Hamburger Menu with full screen Sheet */}
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button 
+                variant="ghost" 
+                className="p-2 text-white hover:bg-black hover:bg-opacity-40"
+                aria-label="Open menu"
+              >
+                <Menu className="h-7 w-7" />
+                <span className="sr-only">Menu</span>
+              </Button>
+            </SheetTrigger>
+            <DetailedMenu />
+          </Sheet>
         </div>
-
-        {/* Mobile Menu */}
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="ghost" className="px-2 text-black hover:bg-gray-100 lg:hidden">
-              <Menu className="h-5 w-5" />
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right">
-            <NavigationMenu mobile />
-          </SheetContent>
-        </Sheet>
       </div>
-      
     </header>
   );
 }

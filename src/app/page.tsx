@@ -4,7 +4,11 @@ import WelcomeSection from "@/components/WelcomeSection";
 import Image from "next/image";
 import NewsCalendarSection from "@/components/NewsCalendarSection";
 import GallerySection from "@/components/GallerySection";
+<<<<<<< HEAD
 import GoogleMapsEmbed from "@/components/maps";
+=======
+import { DetailedMenu } from "@/components/DetailedMenu";
+>>>>>>> f55b7ec110e9fc5e6e6604c5fb16fe05d7bee3fc
 
 export default function Home() {
     return (
