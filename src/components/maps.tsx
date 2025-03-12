@@ -7,7 +7,7 @@ const GoogleMapsEmbed = ({
     height = "500px",
 }) => {
     // Using the same map URL as in your iframe
-    const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31434.473238375704!2d76.53201984804258!3d9.99130131725844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07e74f69cf1c2f%3A0xc13c5c5c4ad46!2sSt.%20George%20Orthodox%20Syrian%20Church%2C%20Mudavoor!5e0!3m2!1sen!2sin!4v1741664429779!5m2!1sen!2sin`;
+    const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.409287858412!2d76.57676097487119!3d9.983009890121501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07dd89a1ab82cd%3A0xf86819a059525dc6!2sSt.%20Thomas%20Orthodox%20Syrian%20Cathedral!5e0!3m2!1sen!2sin!4v1741674459519!5m2!1sen!2sin`;
 
     return (
         <div className="map-section">
