@@ -111,7 +111,7 @@ export function SiteHeader() {
                             className="h-10 w-10"
                         />
                         <div className="hidden font-serif text-xl font-bold text-white sm:inline-block">
-                            St. George Orthodox Church
+                            St. Thomas Orthodox Church
                         </div>
                     </Link>
                 </div>
