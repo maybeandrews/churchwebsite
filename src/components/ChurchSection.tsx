@@ -10,16 +10,16 @@ const ChurchSection = () => {
                     <div className="flex items-center mb-4">
                         <div className="w-1.5 h-10 bg-red-600 mr-4"></div>
                         <h2 className="uppercase text-xl font-bold tracking-wide">
-                            EDAPPALLY CHURCH
+                            MUVATTUPUZHA
                         </h2>
                     </div>
 
                     <div className="mt-6 mb-8">
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-                            St. George Orthodox Cathedral
+                            St. Thomas Orthodox Cathedral
                         </h1>
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                            Muvattupuzah
+                            Muvattupuzha
                         </h2>
 
                         <p className="text-gray-700 text-lg leading-relaxed mt-4">
