@@ -103,14 +103,14 @@ export function SiteHeader() {
                 <div className="flex items-center space-x-4">
                     <Link href="/" className="flex items-center space-x-2">
                         <Image
-                            src="/placeholder.svg"
+                            src="/churchlogotransparent.png"
                             alt="Logo"
                             width={40}
                             height={40}
                             className="h-10 w-10"
                         />
                         <div className="hidden font-serif text-xl font-bold text-white sm:inline-block">
-                            St. George Orthodox Church
+                            St. Thomas Orthodox Cathedral
                         </div>
                     </Link>
                 </div>

@@ -11,24 +11,28 @@ export default function WelcomeSection() {
                 </h2>
                 <div className="grid lg:grid-cols-[400px,1fr] gap-8 items-start">
                     <Image
-                        src="/placeholder.svg"
-                        alt="St. George on horseback"
+                        src="/stthomashorseback.jpeg"
+                        alt="St. Thomas on horseback"
                         width={400}
                         height={400}
                         className="mx-auto lg:mx-0"
                     />
                     <div className="space-y-6">
                         <p className="text-lg leading-relaxed">
-                            St. George's Forane Church Edappally, locally known
-                            as 'Edappally Palli' is a Catholic pilgrimage church
-                            in Edappally, Kochi, Kerala. Being Asia's largest
-                            shrine to Saint George, about five million people
-                            visit it every year. The church is believed to have
-                            been founded in 593 AD. It is regarded as one of the
-                            oldest churches in Kerala, after the seven churches
-                            founded by Thomas the Apostle in the first century
-                            AD. The church was originally dedicated to the
-                            Virgin Mary (Marth Mariam).
+                            St. Thomas Orthodox Cathedral in Muvattupuzha is a
+                            significant cathedral belonging to the Malankara
+                            Orthodox Syrian Church under the Diocese of Kandanad
+                            East. While specific details about its founding date
+                            and unique historical events are less readily
+                            available in the immediate search results compared
+                            to some other ancient churches in Kerala, it stands
+                            as an important religious center in the region. As a
+                            cathedral, it holds a prominent position within its
+                            diocese. The head priest is Metropolitan Thomas Mar
+                            Athanasius. Located in Muvattupuzha, Ernakulam
+                            district, Kerala, it serves as a key place of
+                            worship and community for the Malankara Orthodox
+                            Syrian Christian faithful in that area.
                         </p>
                         <div className="grid md:grid-cols-2 gap-8">
                             <Link href="/mass-times" className="group">

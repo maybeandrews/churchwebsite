@@ -30,7 +30,7 @@ export function SiteFooter() {
                             />
                             <div>
                                 <h3 className="text-lg font-medium">
-                                    St. George Orthodox Church
+                                    St. Thomas Orthodox Church
                                 </h3>
                                 <h2 className="text-xl font-bold">
                                     Muvattupuzha
@@ -44,10 +44,9 @@ export function SiteFooter() {
                                 <LocationPinIcon className="w-5 h-5 mt-1 mr-2 text-pink-300" />
                                 <div>
                                     <p className="font-medium">
-                                        Diocesan Chancery
+                                        Thottumkalpeedika
                                     </p>
-                                    <p>2158 Route 106</p>
-                                    <p>Muttontown, NY 11791</p>
+                                    <p>Muvattupuzah</p>
                                 </div>
                             </div>
 
