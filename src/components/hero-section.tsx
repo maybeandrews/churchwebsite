@@ -13,7 +13,8 @@ export function HeroSection() {
             image: "/images/homeimage.jpg",
             quote: "Blessed are the merciful, for they shall obtain mercy",
             title: "St. Thomas's",
-            subtitle: "Church, Muvattupuzha",
+            subtitle: "Orthodox Cathedral, Muvattupuzah",
+
         },
         {
             image: "/images/homeimage.jpg",

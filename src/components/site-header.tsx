@@ -14,7 +14,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { NavigationMenu } from "./navigation-menu";
-import DetailedMenu from "./DetailedMenu";
 
 export function SiteHeader() {
     const [scrollY, setScrollY] = useState(0);
@@ -104,14 +103,15 @@ export function SiteHeader() {
                 <div className="flex items-center space-x-4">
                     <Link href="/" className="flex items-center space-x-2">
                         <Image
-                            src="/placeholder.svg"
+                            src="/churchlogotransparent.png"
                             alt="Logo"
                             width={40}
                             height={40}
                             className="h-10 w-10"
                         />
                         <div className="hidden font-serif text-xl font-bold text-white sm:inline-block">
-                            St. Thomas Orthodox Church
+
+                            St. Thomas Orthodox Cathedral
                         </div>
                     </Link>
                 </div>
@@ -135,24 +135,6 @@ export function SiteHeader() {
                     >
                         Contact Us
                     </Button>
-
-                    {/* Updated Sheet implementation */}
-                    <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                        <SheetTrigger asChild>
-                            <Button
-                                variant="ghost"
-                                className="p-2 text-white hover:bg-black hover:bg-opacity-40"
-                                aria-label="Open menu"
-                            >
-                                <Menu className="h-7 w-7" />
-                                <span className="sr-only">Menu</span>
-                            </Button>
-                        </SheetTrigger>
-                        <DetailedMenu
-                            isOpen={isOpen}
-                            onClose={() => setIsOpen(false)}
-                        />
-                    </Sheet>
                 </div>
             </div>
         </header>
