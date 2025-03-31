@@ -12,7 +12,7 @@ const NewsCalendarSection = () => {
                         <div className="flex items-center mb-4">
                             <div className="w-1.5 h-10 bg-red-600 mr-4"></div>
                             <h2 className="uppercase text-2xl font-bold tracking-wide">
-                                LATEST NEWS
+                                RECENT NEWS
                             </h2>
                         </div>
                     </div>
