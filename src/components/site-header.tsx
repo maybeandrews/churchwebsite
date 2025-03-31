@@ -14,7 +14,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { NavigationMenu } from "./navigation-menu";
-import DetailedMenu from "./DetailedMenu";
 
 export function SiteHeader() {
     const [scrollY, setScrollY] = useState(0);
@@ -135,24 +134,6 @@ export function SiteHeader() {
                     >
                         Contact Us
                     </Button>
-
-                    {/* Updated Sheet implementation */}
-                    <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                        <SheetTrigger asChild>
-                            <Button
-                                variant="ghost"
-                                className="p-2 text-white hover:bg-black hover:bg-opacity-40"
-                                aria-label="Open menu"
-                            >
-                                <Menu className="h-7 w-7" />
-                                <span className="sr-only">Menu</span>
-                            </Button>
-                        </SheetTrigger>
-                        <DetailedMenu
-                            isOpen={isOpen}
-                            onClose={() => setIsOpen(false)}
-                        />
-                    </Sheet>
                 </div>
             </div>
         </header>
