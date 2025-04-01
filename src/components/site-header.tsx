@@ -94,18 +94,22 @@ export function SiteHeader() {
 
                 {/* Right Section: Buttons and Hamburger */}
                 <div className="flex items-center space-x-4">
-                    <Button
-                        variant="outline"
-                        className="hidden sm:inline-flex bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
-                    >
-                        Donate Now
-                    </Button>
-                    <Button
-                        variant="outline"
-                        className="hidden sm:inline-flex bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
-                    >
-                        Contact Us
-                    </Button>
+                    <Link href="/donations">
+                        <Button
+                            variant="outline"
+                            className="hidden sm:inline-flex bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+                        >
+                            Donate Now
+                        </Button>
+                    </Link>
+                    <Link href="/contact">
+                        <Button
+                            variant="outline"
+                            className="hidden sm:inline-flex bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+                        >
+                            Contact Us
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </header>

@@ -47,32 +47,32 @@ export default function GalleryPage() {
             name: "Parish Events",
             images: [
                 {
-                    src: "/gallery/events/parish-day-1.jpg",
+                    src: "/gallery/parish/annualparishday.jpeg",
                     alt: "Annual parish day celebration",
                     caption: "Annual Parish Day 2024",
                 },
                 {
-                    src: "/gallery/events/picnic-1.jpg",
+                    src: "/gallery/parish/churchpicnic.jpg",
                     alt: "Church picnic",
                     caption: "Summer parish picnic",
                 },
                 {
-                    src: "/gallery/events/conference-1.jpg",
+                    src: "/gallery/parish/faithconference.jpg",
                     alt: "Faith conference",
                     caption: "Orthodox Faith Conference",
                 },
                 {
-                    src: "/gallery/events/cultural-program-1.jpg",
+                    src: "/gallery/parish/churchprogram.jpg",
                     alt: "Cultural program",
                     caption: "Kerala cultural program",
                 },
                 {
-                    src: "/gallery/events/food-festival-1.jpg",
+                    src: "/gallery/parish/foodfestival.jpg",
                     alt: "Kerala food festival",
                     caption: "Annual Kerala Food Festival",
                 },
                 {
-                    src: "/gallery/events/charity-drive-1.jpg",
+                    src: "/gallery/parish/chrityfooddrive.png",
                     alt: "Charity food drive",
                     caption: "Thanksgiving charity drive",
                 },

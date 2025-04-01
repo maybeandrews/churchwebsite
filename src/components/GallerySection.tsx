@@ -9,32 +9,32 @@ const GallerySection = () => {
     const galleryImages = [
         {
             id: 1,
-            src: "/gallery/church-night.jpg",
+            src: "/images/homepage.jpg",
             alt: "Church at night with reflection",
         },
         {
             id: 2,
-            src: "/gallery/church-entrance.jpg",
+            src: "/images/homeimage2.jpg",
             alt: "Church entrance with white facade",
         },
         {
             id: 3,
-            src: "/gallery/church-fountain.jpg",
+            src: "/images/homeimage.jpg",
             alt: "Church with fountain in foreground",
         },
         {
             id: 4,
-            src: "/gallery/church-flowers.jpg",
+            src: "/gallery/church/divineliturgy.jpg",
             alt: "Church with flowers in foreground",
         },
         {
             id: 5,
-            src: "/gallery/church-altar.jpg",
+            src: "/gallery/church/baptismservice.webp",
             alt: "Interior of church showing golden altar",
         },
         {
             id: 6,
-            src: "/gallery/church-aerial.jpg",
+            src: "/gallery/parish/annualparishday.jpeg",
             alt: "Aerial view of the church complex",
         },
     ];
