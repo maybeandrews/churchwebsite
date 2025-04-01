@@ -10,7 +10,7 @@ const NewsCalendarSection = () => {
                 <div className="w-full lg:w-1/2">
                     <div className="mb-6">
                         <div className="flex items-center mb-4">
-                            <div className="w-1.5 h-10 bg-red-600 mr-4"></div>
+                            <div className="w-1.5 h-20 bg-red-600 mr-4"></div>
                             <h2 className="uppercase text-2xl font-bold tracking-wide">
                                 ANNOUNCEMENTS
                             </h2>
@@ -32,14 +32,6 @@ const NewsCalendarSection = () => {
                             eligible to apply. Last date for submission is March
                             15, 2025.
                         </p>
-
-                        <div className="mt-6">
-                            <Link href="/news-details" passHref>
-                                <div className="inline-block bg-red-700 text-white px-8 py-3 font-medium uppercase text-sm tracking-wide cursor-pointer hover:bg-red-800 transition duration-300">
-                                    MORE
-                                </div>
-                            </Link>
-                        </div>
                     </div>
 
                     {/* Second Announcement */}
@@ -55,15 +47,10 @@ const NewsCalendarSection = () => {
                             April 19th at 8:00 PM. Easter Sunday Mass will be
                             celebrated at 7:00 AM, 9:30 AM, and 11:00 AM. All
                             parishioners and visitors are welcome to attend.
+                            Experience the joy of the Resurrection with our
+                            community. May this holy season bring you peace and
+                            blessings.
                         </p>
-
-                        <div className="mt-6">
-                            <Link href="/easter-schedule" passHref>
-                                <div className="inline-block bg-red-700 text-white px-8 py-3 font-medium uppercase text-sm tracking-wide cursor-pointer hover:bg-red-800 transition duration-300">
-                                    MORE
-                                </div>
-                            </Link>
-                        </div>
                     </div>
                 </div>
 
