@@ -12,20 +12,12 @@ const NewsCalendarSection = () => {
                         <div className="flex items-center mb-4">
                             <div className="w-1.5 h-10 bg-red-600 mr-4"></div>
                             <h2 className="uppercase text-2xl font-bold tracking-wide">
-                                RECENT NEWS
+                                ANNOUNCEMENTS
                             </h2>
                         </div>
                     </div>
 
-                    <div className="relative h-64 w-full mb-6">
-                        <Image
-                            src="/church-building.jpg"
-                            alt="Church Building"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-
+                    {/* First Announcement */}
                     <div className="mt-4 mb-8">
                         <h3 className="text-3xl font-bold text-gray-900 mb-4">
                             Invitation For Tender
@@ -43,6 +35,30 @@ const NewsCalendarSection = () => {
 
                         <div className="mt-6">
                             <Link href="/news-details" passHref>
+                                <div className="inline-block bg-red-700 text-white px-8 py-3 font-medium uppercase text-sm tracking-wide cursor-pointer hover:bg-red-800 transition duration-300">
+                                    MORE
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* Second Announcement */}
+                    <div className="mt-4 mb-8 border-t pt-8">
+                        <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                            Easter Mass Schedule
+                        </h3>
+
+                        <p className="text-gray-700 leading-relaxed">
+                            Join us for Easter celebrations at St. George Forane
+                            Church. Good Friday service starts at 9:00 AM on
+                            April 18th. Easter Vigil will be held on Saturday,
+                            April 19th at 8:00 PM. Easter Sunday Mass will be
+                            celebrated at 7:00 AM, 9:30 AM, and 11:00 AM. All
+                            parishioners and visitors are welcome to attend.
+                        </p>
+
+                        <div className="mt-6">
+                            <Link href="/easter-schedule" passHref>
                                 <div className="inline-block bg-red-700 text-white px-8 py-3 font-medium uppercase text-sm tracking-wide cursor-pointer hover:bg-red-800 transition duration-300">
                                     MORE
                                 </div>
