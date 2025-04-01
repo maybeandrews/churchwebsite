@@ -22,7 +22,7 @@ export function SiteFooter() {
                     <div className="md:col-span-4">
                         <div className="flex items-center mb-4">
                             <Image
-                                src="/church-logo.svg"
+                                src="/churchlogo.png"
                                 alt="Church Logo"
                                 width={64}
                                 height={64}
@@ -82,10 +82,6 @@ export function SiteFooter() {
                                 { Icon: InstagramIcon, href: "#" },
                                 { Icon: TwitterIcon, href: "#" },
                                 { Icon: YouTubeIcon, href: "#" },
-                                { Icon: LinkedInIcon, href: "#" },
-                                { Icon: DiscordIcon, href: "#" },
-                                { Icon: SoundCloudIcon, href: "#" },
-                                { Icon: SnapchatIcon, href: "#" },
                             ].map(({ Icon, href }, index) => (
                                 <Link
                                     key={index}
@@ -99,88 +95,77 @@ export function SiteFooter() {
                     </div>
 
                     {/* Quick Links Section */}
-                    <div className="md:col-span-8">
-                        <h3 className="text-xl font-bold mb-6 text-pink-100">
-                            Quick Links
-                        </h3>
+                    <div className="md:col-span-8 md:flex md:justify-end">
+                        <div className="md:w-auto">
+                            <h3 className="text-xl font-bold mb-6 text-pink-100 md:text-right">
+                                Quick Links
+                            </h3>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
-                            {/* Left Column */}
-                            <div className="space-y-2">
-                                {[
-                                    {
-                                        href: "/church-history",
-                                        label: "Church History",
-                                    },
-                                    {
-                                        href: "/catholicos",
-                                        label: "Catholicos of the East",
-                                    },
-                                    {
-                                        href: "/about-diocese",
-                                        label: "About our Diocese",
-                                    },
-                                    {
-                                        href: "/parish-directory",
-                                        label: "Parish Directory",
-                                    },
-                                    {
-                                        href: "/clergy-directory",
-                                        label: "Clergy Directory",
-                                    },
-                                    { href: "/donate", label: "Donate Now" },
-                                    { href: "/news", label: "News & Events" },
-                                    {
-                                        href: "/documents",
-                                        label: "Official Documents",
-                                    },
-                                    { href: "/contact", label: "Contact Us" },
-                                ].map(({ href, label }) => (
-                                    <Link
-                                        key={href}
-                                        href={href}
-                                        className="block hover:text-pink-300"
-                                    >
-                                        {label}
-                                    </Link>
-                                ))}
-                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-28 gap-y-2">
+                                {/* Quick Links Column */}
+                                <div className="space-y-2 md:text-right">
+                                    {[
+                                        {
+                                            href: "/history",
+                                            label: "Church History",
+                                        },
+                                        {
+                                            href: "/patron-saint",
+                                            label: "About our Diocese",
+                                        },
+                                        {
+                                            href: "/administration",
+                                            label: "Parish Directory",
+                                        },
+                                        {
+                                            href: "/feasts",
+                                            label: "Feasts & Memorials Article",
+                                        },
+                                    ].map(({ href, label }) => (
+                                        <Link
+                                            key={href}
+                                            href={href}
+                                            className="block hover:text-pink-300"
+                                        >
+                                            {label}
+                                        </Link>
+                                    ))}
+                                </div>
 
-                            {/* Right Column */}
-                            <div className="space-y-2">
-                                {[
-                                    {
-                                        href: "/metropolitan",
-                                        label: "Metropolitan Orders",
-                                    },
-                                    { href: "/videos", label: "Video Album" },
-                                    {
-                                        href: "/about-metropolitan",
-                                        label: "About our Metropolitan",
-                                    },
-                                    {
-                                        href: "/ministries",
-                                        label: "Ministries",
-                                    },
-                                    { href: "/orthodoxy", label: "Orthodoxy" },
-                                    { href: "/resources", label: "Resources" },
-                                    {
-                                        href: "/liturgical",
-                                        label: "Liturgical Resource Development",
-                                    },
-                                    {
-                                        href: "/feasts",
-                                        label: "Feasts & Memorials Article",
-                                    },
-                                ].map(({ href, label }) => (
-                                    <Link
-                                        key={href}
-                                        href={href}
-                                        className="block hover:text-pink-300"
-                                    >
-                                        {label}
-                                    </Link>
-                                ))}
+                                {/* Second Column of Links */}
+                                <div className="space-y-2 md:text-right">
+                                    {[
+                                        {
+                                            href: "/donate",
+                                            label: "Donate Now",
+                                        },
+                                        {
+                                            href: "/news",
+                                            label: "News & Events",
+                                        },
+                                        {
+                                            href: "/contact",
+                                            label: "Contact Us",
+                                        },
+                                        { href: "/live", label: "Live Stream" },
+                                        {
+                                            href: "/gallery",
+                                            label: "Photo Gallery",
+                                        },
+                                        {
+                                            href: "/youth",
+                                            label: "Youth Ministry",
+                                        },
+                                    ].map(({ href, label }) => (
+                                        <Link
+                                            key={href}
+                                            href={href}
+                                            className="block hover:text-pink-300"
+                                        >
+                                            {label}
+                                        </Link>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

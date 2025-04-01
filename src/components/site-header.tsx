@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import {
     Menu,
     Facebook,
@@ -20,6 +21,10 @@ export function SiteHeader() {
     const [prevScrollY, setPrevScrollY] = useState(0);
     const [visible, setVisible] = useState(true);
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
+
+    // Check if we're on the home page
+    const isHomePage = pathname === "/";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,8 +32,10 @@ export function SiteHeader() {
 
             // Determine if we should show or hide the header
             if (currentScrollY > prevScrollY) {
-                // Scrolling down - hide header
-                setVisible(false);
+                // Scrolling down - hide header only on home page
+                if (isHomePage) {
+                    setVisible(false);
+                }
             } else {
                 // Scrolling up - show header
                 setVisible(true);
@@ -41,62 +48,27 @@ export function SiteHeader() {
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [prevScrollY]);
+    }, [prevScrollY, isHomePage]);
 
-    // Determine header styling based on scroll position
+    // Determine header styling based on scroll position and route
     const isScrolled = scrollY > 50;
+
+    const getHeaderStyle = () => {
+        if (isHomePage) {
+            return isScrolled
+                ? "bg-black bg-opacity-80 backdrop-blur-sm shadow-lg"
+                : "bg-transparent";
+        } else {
+            return "bg-black shadow-lg"; // Always black background on other pages
+        }
+    };
 
     return (
         <header
             className={`fixed w-full z-40 transition-all duration-300 ${
                 visible ? "translate-y-0" : "-translate-y-full"
-            } ${
-                isScrolled
-                    ? "bg-black bg-opacity-80 backdrop-blur-sm shadow-lg"
-                    : "bg-transparent"
-            }`}
+            } ${getHeaderStyle()}`}
         >
-            {/* Top Section: Social Media Icons - now aligned above Contact Us button */}
-            <div className="w-full flex justify-end px-6 py-1">
-                <div className="flex space-x-3 sm:pr-12">
-                    <Link
-                        href="https://facebook.com"
-                        target="_blank"
-                        aria-label="Facebook"
-                    >
-                        <Facebook className="h-4 w-4 text-white hover:text-blue-500 transition-colors duration-200" />
-                    </Link>
-                    <Link
-                        href="https://instagram.com"
-                        target="_blank"
-                        aria-label="Instagram"
-                    >
-                        <Instagram className="h-4 w-4 text-white hover:text-pink-500 transition-colors duration-200" />
-                    </Link>
-                    <Link
-                        href="https://twitter.com"
-                        target="_blank"
-                        aria-label="Twitter"
-                    >
-                        <Twitter className="h-4 w-4 text-white hover:text-blue-400 transition-colors duration-200" />
-                    </Link>
-                    <Link
-                        href="https://youtube.com"
-                        target="_blank"
-                        aria-label="YouTube"
-                    >
-                        <Youtube className="h-4 w-4 text-white hover:text-red-500 transition-colors duration-200" />
-                    </Link>
-                    <Link
-                        href="https://linkedin.com"
-                        target="_blank"
-                        aria-label="LinkedIn"
-                    >
-                        <Linkedin className="h-4 w-4 text-white hover:text-blue-700 transition-colors duration-200" />
-                    </Link>
-                </div>
-            </div>
-
             {/* Main Header Section */}
             <div className="container flex h-16 items-center justify-between">
                 {/* Left Section: Logo */}
@@ -110,7 +82,6 @@ export function SiteHeader() {
                             className="h-10 w-10"
                         />
                         <div className="hidden font-serif text-xl font-bold text-white sm:inline-block">
-
                             St. Thomas Orthodox Cathedral
                         </div>
                     </Link>
@@ -123,18 +94,22 @@ export function SiteHeader() {
 
                 {/* Right Section: Buttons and Hamburger */}
                 <div className="flex items-center space-x-4">
-                    <Button
-                        variant="outline"
-                        className="hidden sm:inline-flex bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
-                    >
-                        Donate Now
-                    </Button>
-                    <Button
-                        variant="outline"
-                        className="hidden sm:inline-flex bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
-                    >
-                        Contact Us
-                    </Button>
+                    <Link href="/donations">
+                        <Button
+                            variant="outline"
+                            className="hidden sm:inline-flex bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+                        >
+                            Donate Now
+                        </Button>
+                    </Link>
+                    <Link href="/contact">
+                        <Button
+                            variant="outline"
+                            className="hidden sm:inline-flex bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+                        >
+                            Contact Us
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </header>

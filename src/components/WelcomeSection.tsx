@@ -35,7 +35,7 @@ export default function WelcomeSection() {
                             Syrian Christian faithful in that area.
                         </p>
                         <div className="grid md:grid-cols-2 gap-8">
-                            <Link href="/mass-times" className="group">
+                            <Link href="/holy-mass" className="group">
                                 <div className="flex items-center space-x-4">
                                     <div className="p-3 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
                                         <Church className="h-8 w-8" />
@@ -65,7 +65,7 @@ export default function WelcomeSection() {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href="/prayer-request" className="group">
+                            <Link href="/prayers" className="group">
                                 <div className="flex items-center space-x-4">
                                     <div className="p-3 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
                                         <svg
@@ -88,7 +88,7 @@ export default function WelcomeSection() {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href="/offerings" className="group">
+                            <Link href="/donations" className="group">
                                 <div className="flex items-center space-x-4">
                                     <div className="p-3 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors">
                                         <Gift className="h-8 w-8" />
