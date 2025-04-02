@@ -1,12 +1,11 @@
 import React from "react";
-import Image from "next/image";
 
 export default function FeastsPage() {
     return (
         <>
             <main className="feasts-container max-w-6xl mx-auto px-5 pt-24 pb-10">
                 <h1 className="page-title text-4xl text-center text-[#7a3b2e] mb-10 pb-4 border-b-2 border-[#d4b78f]">
-                    Feast Days & Church Calendar
+                    Feast Days &amp; Church Calendar
                 </h1>
 
                 {/* Introduction Section */}
@@ -87,19 +86,19 @@ export default function FeastsPage() {
                                 </div>
                                 <div className="md:w-3/4">
                                     <p className="mb-3">
-                                        Easter (Pascha) is the "Feast of Feasts"
-                                        celebrating Christ's Resurrection from
-                                        the dead. It is the culmination of Holy
-                                        Week and the 50-day Great Lent that
-                                        precedes it.
+                                        Easter (Pascha) is the &quot;Feast of
+                                        Feasts&quot; celebrating Christ&apos;s
+                                        Resurrection from the dead. It is the
+                                        culmination of Holy Week and the 50-day
+                                        Great Lent that precedes it.
                                     </p>
                                     <p>
                                         Our celebration begins with the Holy
                                         Saturday midnight service, followed by a
                                         procession and the joyous proclamation
-                                        "Christ is Risen!" The feast continues
-                                        with the Divine Liturgy on Sunday
-                                        morning and festive community
+                                        &quot;Christ is Risen!&quot; The feast
+                                        continues with the Divine Liturgy on
+                                        Sunday morning and festive community
                                         celebrations.
                                     </p>
                                 </div>
@@ -132,7 +131,7 @@ export default function FeastsPage() {
                                         with greenery symbolizing the new life
                                         brought by the Holy Spirit. Special
                                         prayers and hymns invoke the Holy
-                                        Spirit's continued presence in our
+                                        Spirit&apos;s continued presence in our
                                         lives.
                                     </p>
                                 </div>
@@ -161,11 +160,12 @@ export default function FeastsPage() {
                                     </p>
                                     <p>
                                         Our celebration includes a solemn Divine
-                                        Liturgy, procession with the saint's
-                                        icon, special prayers, and parish
-                                        festivities. This is one of our most
-                                        important annual celebrations, drawing
-                                        visitors from neighboring parishes.
+                                        Liturgy, procession with the
+                                        saint&apos;s icon, special prayers, and
+                                        parish festivities. This is one of our
+                                        most important annual celebrations,
+                                        drawing visitors from neighboring
+                                        parishes.
                                     </p>
                                 </div>
                             </div>
@@ -236,9 +236,10 @@ export default function FeastsPage() {
                                 <strong>Period:</strong> 40 days after Pascha
                             </p>
                             <p>
-                                A joyful celebration of Christ's Resurrection,
-                                during which fasting is suspended. Services
-                                begin with the greeting "Christ is Risen!"
+                                A joyful celebration of Christ&apos;s
+                                Resurrection, during which fasting is suspended.
+                                Services begin with the greeting &quot;Christ is
+                                Risen!&quot;
                             </p>
                         </div>
 

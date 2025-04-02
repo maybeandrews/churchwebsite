@@ -3,9 +3,22 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
+// Define the types for your gallery data
+interface GalleryImage {
+    src: string;
+    alt: string;
+    caption: string;
+}
+
+interface GalleryCategory {
+    id: string;
+    name: string;
+    images: GalleryImage[];
+}
+
 export default function GalleryPage() {
     // Gallery image data
-    const galleryCategories = [
+    const galleryCategories: GalleryCategory[] = [
         {
             id: "church-services",
             name: "Church Services",
@@ -81,10 +94,12 @@ export default function GalleryPage() {
     ];
 
     // State for active category (now using useState for client component)
-    const [activeCategory, setActiveCategory] = useState(galleryCategories[0]);
+    const [activeCategory, setActiveCategory] = useState<GalleryCategory>(
+        galleryCategories[0]
+    );
 
     // Function to handle category change
-    const handleCategoryChange = (category: any) => {
+    const handleCategoryChange = (category: GalleryCategory) => {
         setActiveCategory(category);
     };
 

@@ -202,7 +202,7 @@ export default function HolyMassPage() {
                             </h3>
                             <p className="mb-2">
                                 The faithful receive the Body and Blood of
-                                Christ, preceded by the Lord's Prayer and
+                                Christ, preceded by the Lord&apos;s Prayer and
                                 prayers of preparation for worthy reception.
                             </p>
                         </div>
@@ -300,7 +300,7 @@ export default function HolyMassPage() {
                             </h3>
                             <p>
                                 The week before Easter with daily services
-                                commemorating Christ's final days, passion,
+                                commemorating Christ&apos;s final days, passion,
                                 crucifixion, and burial. The schedule includes
                                 special evening services.
                             </p>

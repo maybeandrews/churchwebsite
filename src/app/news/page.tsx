@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function NewsPage() {
     return (
@@ -40,21 +39,23 @@ export default function NewsPage() {
                         </div>
                         <div className="p-6">
                             <p className="mb-4">
-                                This year's Holy Week and Easter celebrations at
-                                St. Thomas Orthodox Church were marked by record
-                                attendance and deeply moving services. The
-                                church was filled to capacity for the midnight
-                                Resurrection service, with over 400 faithful
-                                participating in the candlelight procession and
-                                joyous proclamation of "Christ is Risen!"
+                                This year&apos;s Holy Week and Easter
+                                celebrations at St. Thomas Orthodox Church were
+                                marked by record attendance and deeply moving
+                                services. The church was filled to capacity for
+                                the midnight Resurrection service, with over 400
+                                faithful participating in the candlelight
+                                procession and joyous proclamation of
+                                &quot;Christ is Risen!&quot;
                             </p>
                             <p className="mb-4">
-                                "The spirit of unity and faith was palpable
-                                throughout Holy Week," said Fr. Thomas Mathew.
-                                "From Palm Sunday through the Resurrection
-                                service, our community came together in prayer,
-                                reflection, and ultimately, celebration of our
-                                Lord's triumph over death."
+                                &quot;The spirit of unity and faith was palpable
+                                throughout Holy Week,&quot; said Fr. Thomas
+                                Mathew. &quot;From Palm Sunday through the
+                                Resurrection service, our community came
+                                together in prayer, reflection, and ultimately,
+                                celebration of our Lord&apos;s triumph over
+                                death.&quot;
                             </p>
                         </div>
                     </div>
@@ -91,9 +92,9 @@ export default function NewsPage() {
                                 </h3>
                                 <p className="text-gray-600 mb-3">
                                     Youth ages 13-25 are invited to attend our
-                                    annual Spring Retreat, "Faith in Action," to
-                                    be held April 18-20 at St. Mary's Retreat
-                                    Center.
+                                    annual Spring Retreat, &quot;Faith in
+                                    Action,&quot; to be held April 18-20 at St.
+                                    Mary&apos;s Retreat Center.
                                 </p>
                             </div>
                         </div>
@@ -215,10 +216,10 @@ export default function NewsPage() {
                                     Lenten Food Drive Collects Record Donations
                                 </h3>
                                 <p className="text-gray-600 mb-3">
-                                    This year's Lenten food drive collected over
-                                    1,500 pounds of non-perishable items for
-                                    local families in need, surpassing our goal
-                                    by 25%.
+                                    This year&apos;s Lenten food drive collected
+                                    over 1,500 pounds of non-perishable items
+                                    for local families in need, surpassing our
+                                    goal by 25%.
                                 </p>
                             </div>
                         </div>
@@ -305,8 +306,8 @@ export default function NewsPage() {
                                     9:00 AM - Divine Liturgy
                                 </p>
                                 <p className="text-sm">
-                                    Commemoration of our Lord's triumphant entry
-                                    into Jerusalem, with blessing and
+                                    Commemoration of our Lord&apos;s triumphant
+                                    entry into Jerusalem, with blessing and
                                     distribution of palm fronds.
                                 </p>
                             </div>
@@ -354,9 +355,9 @@ export default function NewsPage() {
                                     Divine Liturgy
                                 </p>
                                 <p className="text-sm">
-                                    Celebration of our Lord's Resurrection with
-                                    midnight service and festive morning Divine
-                                    Liturgy.
+                                    Celebration of our Lord&apos;s Resurrection
+                                    with midnight service and festive morning
+                                    Divine Liturgy.
                                 </p>
                             </div>
                         </div>

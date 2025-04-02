@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -31,6 +31,35 @@ export function HeroSection() {
         },
     ];
 
+    const goToSlide = useCallback(
+        (newIndex: number) => {
+            if (isTransitioning || newIndex === currentSlide) {
+                return;
+            }
+
+            setIsTransitioning(true);
+
+            // Fade out current slide
+            setTimeout(() => {
+                setCurrentSlide(newIndex);
+
+                // Fade in new slide after a small delay
+                setTimeout(() => {
+                    setIsTransitioning(false);
+                }, 20); // Small delay to ensure opacity-100 is applied
+            }, 500); // Duration of the fade-out
+        },
+        [currentSlide, isTransitioning]
+    );
+
+    const goToNextSlide = useCallback(() => {
+        goToSlide((currentSlide + 1) % slides.length);
+    }, [currentSlide, slides.length, goToSlide]);
+
+    const goToPrevSlide = useCallback(() => {
+        goToSlide((currentSlide - 1 + slides.length) % slides.length);
+    }, [currentSlide, slides.length, goToSlide]);
+
     useEffect(() => {
         setIsLoaded(true);
 
@@ -49,33 +78,7 @@ export function HeroSection() {
                 clearTimeout(timeoutRef.current);
             }
         };
-    }, [slides.length, currentSlide, isTransitioning]);
-
-    const goToSlide = (newIndex: any) => {
-        if (isTransitioning || newIndex === currentSlide) {
-            return;
-        }
-
-        setIsTransitioning(true);
-
-        // Fade out current slide
-        setTimeout(() => {
-            setCurrentSlide(newIndex);
-
-            // Fade in new slide after a small delay
-            setTimeout(() => {
-                setIsTransitioning(false);
-            }, 20); // Small delay to ensure opacity-100 is applied
-        }, 500); // Duration of the fade-out
-    };
-
-    const goToNextSlide = () => {
-        goToSlide((currentSlide + 1) % slides.length);
-    };
-
-    const goToPrevSlide = () => {
-        goToSlide((currentSlide - 1 + slides.length) % slides.length);
-    };
+    }, [goToNextSlide, isTransitioning]);
 
     return (
         <div className="relative h-screen w-full overflow-hidden bg-gray-900">

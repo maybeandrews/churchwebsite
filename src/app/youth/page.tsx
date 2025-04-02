@@ -20,7 +20,8 @@ export default function YouthPage() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                         <h2 className="text-white text-3xl md:text-4xl font-bold px-4 text-center">
-                            "Let no one despise your youth" - 1 Timothy 4:12
+                            &quot;Let no one despise your youth&quot; - 1
+                            Timothy 4:12
                         </h2>
                     </div>
                 </div>
@@ -124,17 +125,19 @@ export default function YouthPage() {
                             </h3>
                             <ul className="list-disc pl-5 space-y-1">
                                 <li>
-                                    Bible study & Orthodox faith discussions
+                                    Bible study &amp; Orthodox faith discussions
                                 </li>
-                                <li>Retreats (Fall & Lenten)</li>
-                                <li>Prayer services & worship participation</li>
+                                <li>Retreats (Fall &amp; Lenten)</li>
+                                <li>
+                                    Prayer services &amp; worship participation
+                                </li>
                                 <li>Youth-led Divine Liturgy (quarterly)</li>
                             </ul>
                         </div>
 
                         <div className="bg-white p-5 rounded-lg shadow-sm">
                             <h3 className="text-xl text-[#7a3b2e] mb-3">
-                                Service & Outreach
+                                Service &amp; Outreach
                             </h3>
                             <ul className="list-disc pl-5 space-y-1">
                                 <li>Food bank volunteering (monthly)</li>
@@ -146,10 +149,10 @@ export default function YouthPage() {
 
                         <div className="bg-white p-5 rounded-lg shadow-sm">
                             <h3 className="text-xl text-[#7a3b2e] mb-3">
-                                Fellowship & Fun
+                                Fellowship &amp; Fun
                             </h3>
                             <ul className="list-disc pl-5 space-y-1">
-                                <li>Game nights & movie discussions</li>
+                                <li>Game nights &amp; movie discussions</li>
                                 <li>Sports tournaments</li>
                                 <li>Annual camping trip</li>
                                 <li>Holiday celebrations</li>
@@ -167,7 +170,7 @@ export default function YouthPage() {
                     <div className="space-y-4">
                         <div className="border-l-4 border-[#d4b78f] pl-4 py-2">
                             <h3 className="text-lg font-medium">
-                                Spring Retreat: "Faith in Action"
+                                Spring Retreat: &quot;Faith in Action&quot;
                             </h3>
                             <p className="mb-1">
                                 <strong>Date:</strong> April 18-20, 2025
@@ -200,14 +203,14 @@ export default function YouthPage() {
 
                         <div className="border-l-4 border-[#d4b78f] pl-4 py-2">
                             <h3 className="text-lg font-medium">
-                                Youth Sunday & Talent Show
+                                Youth Sunday &amp; Talent Show
                             </h3>
                             <p className="mb-1">
                                 <strong>Date:</strong> June 7, 2025
                             </p>
                             <p className="mb-1">
-                                <strong>Location:</strong> Church & Fellowship
-                                Hall
+                                <strong>Location:</strong> Church &amp;
+                                Fellowship Hall
                             </p>
                             <p>
                                 Youth-led Divine Liturgy followed by talent

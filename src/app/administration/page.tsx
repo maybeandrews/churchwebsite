@@ -137,8 +137,8 @@ export default function AdministrationPage() {
                                 Martha Mariam Samajam
                             </h3>
                             <p className="mb-2">
-                                Women's fellowship group engaged in prayer and
-                                community service.
+                                Women&apos;s fellowship group engaged in prayer
+                                and community service.
                             </p>
                             <p className="text-gray-700">
                                 <strong>President:</strong> Mrs. Annamma Thomas

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function DonationsPage() {
     return (
@@ -22,7 +21,7 @@ export default function DonationsPage() {
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                         <div className="text-center max-w-3xl mx-auto px-4">
                             <h2 className="text-white text-3xl md:text-4xl font-bold mb-4">
-                                "Give, and it will be given to you"
+                                &quot;Give, and it will be given to you&quot;
                             </h2>
                             <p className="text-white text-lg">Luke 6:38</p>
                         </div>
@@ -114,14 +113,14 @@ export default function DonationsPage() {
                                 </h3>
                             </div>
                             <p className="mb-6">
-                                Simply text "GIVE" to (123) 456-7890 to make a
-                                donation from your mobile device. First-time
-                                donors will receive a link to set up their
-                                payment information.
+                                Simply text &quot;GIVE&quot; to (123) 456-7890
+                                to make a donation from your mobile device.
+                                First-time donors will receive a link to set up
+                                their payment information.
                             </p>
                             <div className="p-4 bg-[#f9f5f0] rounded text-center">
                                 <span className="font-semibold">
-                                    Text "GIVE" to:
+                                    Text &quot;GIVE&quot; to:
                                 </span>
                                 <p className="text-xl font-bold">
                                     (123) 456-7890
@@ -157,8 +156,8 @@ export default function DonationsPage() {
                             <p className="mb-4">
                                 Checks can be mailed to our church office or
                                 placed in the offering tray during Sunday
-                                services. Please make checks payable to "St.
-                                Thomas Orthodox Church."
+                                services. Please make checks payable to
+                                &quot;St. Thomas Orthodox Church.&quot;
                             </p>
                             <div className="p-4 bg-[#f9f5f0] rounded mb-4">
                                 <p className="font-medium">Mailing Address:</p>
@@ -369,7 +368,7 @@ export default function DonationsPage() {
                     <p className="mb-4">
                         You will receive a receipt for your donation that can be
                         used for tax purposes. Annual contribution statements
-                        are sent out in January for the previous year's
+                        are sent out in January for the previous year&apos;s
                         donations.
                     </p>
 

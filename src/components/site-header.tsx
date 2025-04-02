@@ -4,23 +4,13 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import {
-    Menu,
-    Facebook,
-    Instagram,
-    Twitter,
-    Youtube,
-    Linkedin,
-} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { NavigationMenu } from "./navigation-menu";
 
 export function SiteHeader() {
     const [scrollY, setScrollY] = useState(0);
     const [prevScrollY, setPrevScrollY] = useState(0);
     const [visible, setVisible] = useState(true);
-    const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
 
     // Check if we're on the home page

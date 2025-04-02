@@ -16,12 +16,13 @@ export default function PatronSaintPage() {
                             The Apostle to India
                         </h2>
                         <p>
-                            St. Thomas, also known as Didymus ("the Twin"), was
-                            one of the Twelve Apostles of Jesus Christ. He is
-                            best known for his initial doubt about Jesus's
-                            resurrection, leading to the famous moment when
-                            Jesus invited him to touch his wounds, prompting
-                            Thomas's confession of faith: "My Lord and my God!"
+                            St. Thomas, also known as Didymus (&quot;the
+                            Twin&quot;), was one of the Twelve Apostles of Jesus
+                            Christ. He is best known for his initial doubt about
+                            Jesus&apos;s resurrection, leading to the famous
+                            moment when Jesus invited him to touch his wounds,
+                            prompting Thomas&apos;s confession of faith:
+                            &quot;My Lord and my God!&quot;
                         </p>
                         <p>
                             As the patron saint of our church, St. Thomas holds
@@ -68,8 +69,8 @@ export default function PatronSaintPage() {
                                 Born in Galilee, St. Thomas was a fisherman
                                 before being called by Jesus to become one of
                                 the Twelve Apostles. His name in Aramaic
-                                (Tau'ma) means "twin," and he was also called
-                                Didymus, the Greek word for twin.
+                                (Tau&apos;ma) means &quot;twin,&quot; and he was
+                                also called Didymus, the Greek word for twin.
                             </p>
                         </div>
                         <div className="event bg-[#f1e8d8] p-5 rounded shadow-sm">
@@ -77,11 +78,12 @@ export default function PatronSaintPage() {
                                 Ministry with Jesus
                             </h3>
                             <p>
-                                During Jesus's ministry, Thomas displayed both
-                                devotion and questioning nature. When Jesus
+                                During Jesus&apos;s ministry, Thomas displayed
+                                both devotion and questioning nature. When Jesus
                                 decided to return to Judea despite dangers,
-                                Thomas said to the other disciples, "Let us also
-                                go, that we may die with him" (John 11:16).
+                                Thomas said to the other disciples, &quot;Let us
+                                also go, that we may die with him&quot; (John
+                                11:16).
                             </p>
                         </div>
                         <div className="event bg-[#f1e8d8] p-5 rounded shadow-sm">
@@ -91,11 +93,11 @@ export default function PatronSaintPage() {
                             <p>
                                 After the resurrection, Thomas was not present
                                 when Jesus first appeared to the disciples. When
-                                told of this, he said, "Unless I see the nail
-                                marks in his hands... I will not believe." Eight
-                                days later, Jesus appeared, inviting Thomas to
-                                touch his wounds, leading to Thomas's profound
-                                confession of faith.
+                                told of this, he said, &quot;Unless I see the
+                                nail marks in his hands... I will not
+                                believe.&quot; Eight days later, Jesus appeared,
+                                inviting Thomas to touch his wounds, leading to
+                                Thomas&apos;s profound confession of faith.
                             </p>
                         </div>
                         <div className="event bg-[#f1e8d8] p-5 rounded shadow-sm">
@@ -127,10 +129,10 @@ export default function PatronSaintPage() {
 
                 <section className="quote-section bg-[#7a3b2e] text-white p-10 text-center my-10 rounded">
                     <blockquote className="italic text-2xl max-w-4xl mx-auto relative">
-                        "My Lord and my God!" — The confession of faith by St.
-                        Thomas upon seeing the resurrected Christ, becoming one
-                        of the most profound declarations of Christ's divinity
-                        in the Gospels.
+                        &quot;My Lord and my God!&quot; — The confession of
+                        faith by St. Thomas upon seeing the resurrected Christ,
+                        becoming one of the most profound declarations of
+                        Christ&apos;s divinity in the Gospels.
                     </blockquote>
                 </section>
 
@@ -139,18 +141,18 @@ export default function PatronSaintPage() {
                         Legacy & Relevance Today
                     </h2>
                     <p>
-                        St. Thomas's journey from doubt to faith continues to
-                        resonate with Christians today. His story teaches us
+                        St. Thomas&apos;s journey from doubt to faith continues
+                        to resonate with Christians today. His story teaches us
                         that questioning can lead to deeper understanding and
                         stronger belief. As our patron saint, he reminds us that
                         faith often requires personal encounter and experience.
                     </p>
                     <p>
                         The Mar Thoma Nazranis (St. Thomas Christians) of Kerala
-                        trace their origins to the apostle's mission work. Our
-                        church continues this ancient tradition, preserving the
-                        liturgical and spiritual heritage brought by St. Thomas
-                        to India nearly two millennia ago.
+                        trace their origins to the apostle&apos;s mission work.
+                        Our church continues this ancient tradition, preserving
+                        the liturgical and spiritual heritage brought by St.
+                        Thomas to India nearly two millennia ago.
                     </p>
                     <p>
                         In our community at St. Thomas Orthodox Church in

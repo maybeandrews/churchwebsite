@@ -42,9 +42,10 @@ export default function ChurchHistoryPage() {
                     <p>
                         The foundation stone for our church building was laid on
                         March 15, 1932, by His Grace Geevarghese Mar Ivanios,
-                        marking the beginning of our parish's physical presence
-                        in the community. Construction was completed through the
-                        devoted efforts and sacrifices of our founding members.
+                        marking the beginning of our parish&apos;s physical
+                        presence in the community. Construction was completed
+                        through the devoted efforts and sacrifices of our
+                        founding members.
                     </p>
                 </section>
 
@@ -223,7 +224,7 @@ export default function ChurchHistoryPage() {
                     </p>
                     <ul className="list-disc pl-8 mb-4 space-y-2">
                         <li>Sunday School for children and youth</li>
-                        <li>Martha Mariam Samajam (Women's Fellowship)</li>
+                        <li>Martha Mariam Samajam (Women&apos;s Fellowship)</li>
                         <li>MGOCSM (Orthodox Youth Movement)</li>
                         <li>Choir and cultural activities</li>
                         <li>Charitable outreach programs</li>
@@ -233,7 +234,7 @@ export default function ChurchHistoryPage() {
                         As we look to the future, we remain committed to
                         preserving our Orthodox faith and traditions while
                         serving the needs of our growing community and spreading
-                        Christ's message of love and peace.
+                        Christ&apos;s message of love and peace.
                     </p>
                 </section>
 

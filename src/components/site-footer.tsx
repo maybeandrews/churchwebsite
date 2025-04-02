@@ -5,10 +5,6 @@ import {
     InstagramIcon,
     TwitterIcon,
     YouTubeIcon,
-    LinkedInIcon,
-    DiscordIcon,
-    SoundCloudIcon,
-    SnapchatIcon,
     LocationPinIcon,
     PhoneIcon,
 } from "@/components/icons";

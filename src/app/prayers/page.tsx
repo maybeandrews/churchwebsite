@@ -20,7 +20,8 @@ export default function PrayersPage() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                         <h2 className="text-white text-3xl md:text-4xl font-bold px-4 text-center">
-                            "Pray without ceasing" - 1 Thessalonians 5:17
+                            &quot;Pray without ceasing&quot; - 1 Thessalonians
+                            5:17
                         </h2>
                     </div>
                 </div>
@@ -40,9 +41,9 @@ export default function PrayersPage() {
                     <p>
                         At St. Thomas Orthodox Church, we emphasize both
                         communal and personal prayer as essential spiritual
-                        disciplines. Below, you'll find some of the most common
-                        prayers used in our tradition, along with information
-                        about prayer practices and devotional life.
+                        disciplines. Below, you&apos;ll find some of the most
+                        common prayers used in our tradition, along with
+                        information about prayer practices and devotional life.
                     </p>
                 </section>
 
@@ -71,24 +72,24 @@ export default function PrayersPage() {
                                     O most Holy Trinity, have mercy on us. O
                                     Lord, cleanse us from our sins. O Master,
                                     pardon our transgressions. O Holy One, visit
-                                    and heal our infirmities, for Thy Name's
-                                    sake.
+                                    and heal our infirmities, for Thy
+                                    Name&apos;s sake.
                                 </p>
                                 <p className="italic mt-2">
                                     Lord, have mercy. (3 times)
                                 </p>
                             </div>
                             <p className="text-sm text-gray-600">
-                                The Trisagion ("Thrice Holy") Prayer is one of
-                                the most common prayers in Orthodox worship,
-                                used both in liturgical services and personal
-                                devotions.
+                                The Trisagion (&quot;Thrice Holy&quot;) Prayer
+                                is one of the most common prayers in Orthodox
+                                worship, used both in liturgical services and
+                                personal devotions.
                             </p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-sm">
                             <h3 className="text-xl text-[#7a3b2e] mb-3">
-                                The Lord's Prayer
+                                The Lord&apos;s Prayer
                             </h3>
                             <div className="bg-[#f9f5f0] p-4 rounded-lg mb-4">
                                 <p className="italic">
@@ -108,7 +109,7 @@ export default function PrayersPage() {
                                 </p>
                             </div>
                             <p className="text-sm text-gray-600">
-                                Taught by Christ Himself, the Lord's Prayer
+                                Taught by Christ Himself, the Lord&apos;s Prayer
                                 forms a central part of Orthodox worship and is
                                 recited in every Divine Liturgy.
                             </p>
@@ -169,7 +170,7 @@ export default function PrayersPage() {
                             <p>
                                 Begin each day with prayer, offering the first
                                 moments to God in thanksgiving and asking for
-                                His blessing on the day's activities.
+                                His blessing on the day&apos;s activities.
                             </p>
                         </div>
 
@@ -246,9 +247,9 @@ export default function PrayersPage() {
                     <p>
                         The Church observes several fasting periods throughout
                         the year, including Great Lent, the Nativity Fast, the
-                        Apostles' Fast, and the Dormition Fast. During these
-                        times, the faithful are encouraged to intensify their
-                        prayer life alongside their fasting discipline.
+                        Apostles&apos; Fast, and the Dormition Fast. During
+                        these times, the faithful are encouraged to intensify
+                        their prayer life alongside their fasting discipline.
                     </p>
                 </section>
 
@@ -339,7 +340,7 @@ export default function PrayersPage() {
 
                         <div className="p-4 border border-gray-200 rounded-lg">
                             <h3 className="font-medium text-[#7a3b2e]">
-                                Mothers' Prayer Circle
+                                Mothers&apos; Prayer Circle
                             </h3>
                             <p>First Monday of each month, 10:00 AM</p>
                             <p className="text-sm mt-2">

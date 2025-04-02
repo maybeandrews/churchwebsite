@@ -20,7 +20,8 @@ export default function SundaySchoolPage() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                         <h2 className="text-white text-3xl md:text-4xl font-bold px-4 text-center">
-                            "Let the little children come to me" - Matthew 19:14
+                            &quot;Let the little children come to me&quot; -
+                            Matthew 19:14
                         </h2>
                     </div>
                 </div>
@@ -94,7 +95,7 @@ export default function SundaySchoolPage() {
                             <tbody className="bg-white divide-y divide-gray-200">
                                 <tr>
                                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                        Pre-K & Kindergarten
+                                        Pre-K &amp; Kindergarten
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                         Ages 3-5
@@ -206,7 +207,7 @@ export default function SundaySchoolPage() {
 
                         <div className="bg-white p-5 rounded-lg shadow-sm">
                             <h3 className="text-xl text-[#7a3b2e] mb-3">
-                                Orthodox Faith & Tradition
+                                Orthodox Faith &amp; Tradition
                             </h3>
                             <p className="mb-2">
                                 Students learn about Orthodox theology,
@@ -224,7 +225,7 @@ export default function SundaySchoolPage() {
 
                         <div className="bg-white p-5 rounded-lg shadow-sm">
                             <h3 className="text-xl text-[#7a3b2e] mb-3">
-                                Prayer & Worship
+                                Prayer &amp; Worship
                             </h3>
                             <p className="mb-2">
                                 Children learn traditional Orthodox prayers and
@@ -261,10 +262,10 @@ export default function SundaySchoolPage() {
                     </div>
                 </section>
 
-                {/* Special Events & Activities */}
+                {/* Special Events &amp; Activities */}
                 <section className="mb-12 bg-white p-6 rounded-lg shadow-sm">
                     <h2 className="text-2xl text-[#7a3b2e] mb-4 font-semibold">
-                        Special Events & Activities
+                        Special Events &amp; Activities
                     </h2>
 
                     <p className="mb-6">
@@ -280,8 +281,8 @@ export default function SundaySchoolPage() {
                             </h3>
                             <p>
                                 A celebration featuring performances by students
-                                showcasing what they've learned, typically held
-                                in May with awards and recognition.
+                                showcasing what they&apos;ve learned, typically
+                                held in May with awards and recognition.
                             </p>
                         </div>
 
@@ -368,8 +369,8 @@ export default function SundaySchoolPage() {
                                 </li>
                                 <li>
                                     Submit the form along with the annual
-                                    materials fee ($25 per student, maximum $60
-                                    per family)
+                                    materials fee (&apos;$25 per student,
+                                    maximum $60 per family&apos;)
                                 </li>
                                 <li>
                                     Attend the parent orientation session in
@@ -418,7 +419,10 @@ export default function SundaySchoolPage() {
                                 </li>
                                 <li>Review lessons at home during the week</li>
                                 <li>Help with memory verses and prayers</li>
-                                <li>Discuss the Sunday's lesson after class</li>
+                                <li>
+                                    Discuss the Sunday School&apos;s lesson
+                                    after class
+                                </li>
                                 <li>
                                     Model active participation in church life
                                 </li>

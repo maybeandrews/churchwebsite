@@ -11,7 +11,6 @@ const ChurchSection = () => {
                         <div className="w-1.5 h-10 bg-red-600 mr-4"></div>
                         <h2 className="uppercase text-xl font-bold tracking-wide">
                             ORTHODOX CHURCH
-
                         </h2>
                     </div>
 
@@ -24,9 +23,9 @@ const ChurchSection = () => {
                         </h2>
 
                         <p className="text-gray-700 text-lg leading-relaxed mt-4">
-                            Asia's largest shrine to Saint Thomas, about five
-                            million people visit it every year. The church is
-                            thought to have been founded in 593 AD. It is
+                            Asia&apos;s largest shrine to Saint Thomas, about
+                            five million people visit it every year. The church
+                            is thought to have been founded in 593 AD. It is
                             regarded as one of the oldest churches in Kerala,
                             after the seven churches founded by Thomas the
                             Apostle in the first century AD.
