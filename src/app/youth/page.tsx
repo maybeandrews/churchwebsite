@@ -176,8 +176,8 @@ export default function YouthPage() {
                                 <strong>Date:</strong> April 18-20, 2025
                             </p>
                             <p className="mb-1">
-                                <strong>Location:</strong> St. Mary's Retreat
-                                Center
+                                <strong>Location:</strong> St. Mary&apos;s
+                                Retreat Center
                             </p>
                             <p>
                                 A weekend of spiritual renewal, fellowship, and

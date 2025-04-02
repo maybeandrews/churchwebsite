@@ -34,8 +34,8 @@ export default function LiveStreamPage() {
                                 Welcome to our video stream of the Holy Qurbana
                                 (Divine Liturgy) from St. Thomas Orthodox
                                 Church. Join us every Sunday at 9:00 AM for the
-                                live service. If you'd like to see more videos,
-                                please visit our YouTube channel.
+                                live service. If you&apos;d like to see more
+                                videos, please visit our YouTube channel.
                             </p>
                             <div className="flex items-center gap-3 text-sm text-gray-600 mb-3">
                                 <span>Sundays 9:00 AM</span>
