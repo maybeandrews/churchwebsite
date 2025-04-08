@@ -6,15 +6,22 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu } from "./navigation-menu";
+import { Menu, X } from "lucide-react"; // Import icons
 
 export function SiteHeader() {
     const [scrollY, setScrollY] = useState(0);
     const [prevScrollY, setPrevScrollY] = useState(0);
     const [visible, setVisible] = useState(true);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const pathname = usePathname();
 
     // Check if we're on the home page
     const isHomePage = pathname === "/";
+
+    // Close mobile menu when route changes
+    useEffect(() => {
+        setMobileMenuOpen(false);
+    }, [pathname]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,7 +30,7 @@ export function SiteHeader() {
             // Determine if we should show or hide the header
             if (currentScrollY > prevScrollY) {
                 // Scrolling down - hide header only on home page
-                if (isHomePage) {
+                if (isHomePage && !mobileMenuOpen) {
                     setVisible(false);
                 }
             } else {
@@ -38,13 +45,15 @@ export function SiteHeader() {
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [prevScrollY, isHomePage]);
+    }, [prevScrollY, isHomePage, mobileMenuOpen]);
 
     // Determine header styling based on scroll position and route
     const isScrolled = scrollY > 50;
 
     const getHeaderStyle = () => {
-        if (isHomePage) {
+        if (mobileMenuOpen) {
+            return "bg-black shadow-lg"; // Always solid when mobile menu is open
+        } else if (isHomePage) {
             return isScrolled
                 ? "bg-black bg-opacity-80 backdrop-blur-sm shadow-lg"
                 : "bg-transparent";
@@ -77,31 +86,72 @@ export function SiteHeader() {
                     </Link>
                 </div>
 
-                {/* Navigation Menu (Centered) */}
+                {/* Navigation Menu (Centered) - Desktop Only */}
                 <div className="hidden lg:flex lg:flex-1 justify-end">
                     <NavigationMenu />
                 </div>
 
                 {/* Right Section: Buttons and Hamburger */}
                 <div className="flex items-center space-x-4">
-                    <Link href="/donations">
+                    <Link href="/donations" className="hidden sm:block">
                         <Button
                             variant="outline"
-                            className="hidden sm:inline-flex bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+                            className="bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white focus:bg-[#c23b22]/30 focus:text-white focus:outline-none focus:ring-2 focus:ring-white/50"
                         >
                             Donate Now
                         </Button>
                     </Link>
-                    <Link href="/contact">
+                    <Link href="/contact" className="hidden sm:block">
                         <Button
                             variant="outline"
-                            className="hidden sm:inline-flex bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+                            className="bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white focus:bg-[#fb6d4c] focus:text-white focus:outline-none focus:ring-2 focus:ring-white/50"
                         >
                             Contact Us
                         </Button>
                     </Link>
+
+                    {/* Mobile Menu Toggle with improved focus styles */}
+                    <button
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        className="lg:hidden p-2 text-white focus:outline-none focus:bg-white/20 focus:rounded-md"
+                        aria-label="Toggle mobile menu"
+                    >
+                        {mobileMenuOpen ? (
+                            <X className="h-6 w-6" />
+                        ) : (
+                            <Menu className="h-6 w-6" />
+                        )}
+                    </button>
                 </div>
             </div>
+
+            {/* Mobile Menu Overlay */}
+            {mobileMenuOpen && (
+                <div className="lg:hidden bg-black text-white overflow-y-auto max-h-[calc(100vh-4rem)]">
+                    <div className="container py-6">
+                        <NavigationMenu mobile={true} />
+
+                        <div className="flex flex-col space-y-4 mt-6 pt-6 border-t border-gray-700">
+                            <Link href="/donations">
+                                <Button
+                                    variant="outline"
+                                    className="w-full bg-transparent border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+                                >
+                                    Donate Now
+                                </Button>
+                            </Link>
+                            <Link href="/contact">
+                                <Button
+                                    variant="outline"
+                                    className="w-full bg-[#c23b22] border-[#c23b22] text-white hover:bg-[#fb6d4c] hover:text-white"
+                                >
+                                    Contact Us
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            )}
         </header>
     );
 }

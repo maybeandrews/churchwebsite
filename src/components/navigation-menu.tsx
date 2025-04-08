@@ -74,7 +74,13 @@ export function NavigationMenu({ mobile = false }: { mobile?: boolean }) {
             <NavigationMenuList className="bg-transparent">
                 {navigation.map((item) => (
                     <NavigationMenuItem key={item.title}>
-                        <NavigationMenuTrigger className="bg-transparent text-white data-[state=open]:bg-transparent focus:bg-transparent hover:bg-transparent hover:text-white">
+                        <NavigationMenuTrigger
+                            className="bg-transparent text-white data-[state=open]:bg-transparent 
+                                      focus:bg-white/20 hover:bg-transparent hover:text-white
+                                      active:bg-white/20 focus-visible:bg-white/20 focus-visible:text-white
+                                      data-[active]:bg-white/20 data-[state=open]:text-white
+                                      focus:outline-none focus:ring-1 focus:ring-white/30"
+                        >
                             {item.title}
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
