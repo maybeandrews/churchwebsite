@@ -22,7 +22,7 @@ const NewsCalendarSection = () => {
                         </h3>
 
                         <p className="text-gray-700 leading-relaxed">
-                            St. George Forane Church, Edappally, invites sealed
+                            St. Thomas Church, Muvattupuzha, invites sealed
                             tender applications for constructing an Auditorium
                             building at Edappally. Contractors who have
                             successfully completed a single civil construction
@@ -39,7 +39,7 @@ const NewsCalendarSection = () => {
                         </h3>
 
                         <p className="text-gray-700 leading-relaxed">
-                            Join us for Easter celebrations at St. George Forane
+                            Join us for Easter celebrations at St. Thomas
                             Church. Good Friday service starts at 9:00 AM on
                             April 18th. Easter Vigil will be held on Saturday,
                             April 19th at 8:00 PM. Easter Sunday Mass will be
