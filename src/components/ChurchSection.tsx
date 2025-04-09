@@ -32,7 +32,7 @@ const ChurchSection = () => {
                         </p>
 
                         <div className="mt-8">
-                            <Link href="/more-info" passHref>
+                            <Link href="/history" passHref>
                                 <div className="inline-block bg-red-700 text-white px-8 py-3 font-medium uppercase text-sm tracking-wide cursor-pointer hover:bg-red-800 transition duration-300 rounded-md">
                                     MORE
                                 </div>
